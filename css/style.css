@@ -1,8 +1,36 @@
 #iconoLogo{
     max-width: 50px;
     border-radius: 5%;
+    animation: bounce2 .5s alternate infinite ease-in;
 }
 
+
+
+@keyframes bounce2{
+  0%{
+    transform: rotateX(10deg);
+  }
+  100%{
+    transform: translatey(75deg);
+  }
+
+
+}
+
+.efectoSombra{
+   background-color: #0000004d !important;
+}
+
+.efectoSombra:hover{
+  background-color: #00000023 !important;
+  transition: all 300ms ease-in;
+}
+
+#botonLogin{
+  background-color: white;
+  color: rgb(252, 128, 13);
+  transition: all 300ms ease-in;
+}
 
 .navbar{
   
