@@ -125,3 +125,26 @@
  display: none;
 }
 }
+
+.carousel-item h3{
+  font-family: 'Roboto Condensed',sans-serif;
+  font-size: 40px;
+  font-style: bold;
+  
+
+
+}
+
+.carousel-caption{
+ /* background-color:  #0000004d; */
+ font-family: 'Roboto Condensed',sans-serif;
+ font-size: 20px;
+ 
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  ;
+
+  
+}
