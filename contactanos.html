@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.12.0/d3.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".botonContac").click(function() {
+                $(".input, .text-area").val("");
+            });
+        });
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url("img/contactenos.jpg") no-repeat top center;
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            font-style: 16px;
+            font-family: 'Jomolhari', serif;
+             
+        }
+
+        .img{
+            max-width: 80px;
+            border-radius: 15%;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body id="contacBody">
+
+    <div id="cajaContac">
+        <div class="contactanos">
+            <!-- <div class="img">
+                <img src="img/logoMufa.png" alt="" >
+
+            </div> -->
+            <div class="titulo">Contactanos!</div>
+
+            <div class="campos">
+                <div class="items">
+                    <label for="nombre" class="label">Nombre</label>
+                    <input id="nombre" type="text" class="input">
+                </div>
+                <div class="items">
+                    <label for="email" class="label">E-mail</label>
+                    <input id="email" type="text" class="input">
+                </div>
+                <div class="items">
+                    <label for="subject" class="label">Tema</label>
+                    <input id="subject" type="text" class="input">
+                </div>
+                <div class="items">
+                    <label for="mensaje" class="label">Mensaje</label>
+                    <textarea id="mensaje" type="text" class="text-area"></textarea>
+                </div>
+
+
+
+            </div>
+            <div class="botonContac">Enviar</div>
+            
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
