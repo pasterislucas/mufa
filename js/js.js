@@ -1,14 +1,14 @@
 function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
+  document.getElementById("mySidenav").style.width = "100%";
+}
 
-              /* comienza js del porfolio de noticias */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
 
-              filterSelection("all") // Execute the function and show all columns
+/* comienza js del porfolio de noticias */
+
+filterSelection("all") // Execute the function and show all columns
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("column");
@@ -39,7 +39,7 @@ function w3RemoveClass(element, name) {
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
     while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1); 
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
     }
   }
   element.className = arr1.join(" ");
@@ -49,7 +49,7 @@ function w3RemoveClass(element, name) {
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
+  btns[i].addEventListener("click", function () {
     var current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
@@ -57,12 +57,36 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 
-               /* finaliza js del porfolio de noticias */
+/* finaliza js del porfolio de noticias */
 
-               function openNav() {
-                document.getElementById("mySidenav").style.width = "100vw";
-              }
-              
-              function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-              }
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100vw";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+// galeria de videos
+// function getYouTubeThumbnailImage($video_id) {
+//   return "http://i3.ytimg.com/vi/$video_id/hqdefault.jpg";
+// }
+
+$(document).ready(function() {
+  $('#videos a').each(function() {
+     var data = $(this).attr('data');
+     $(this).append('<img src="http://img.youtube.com/vi/'+data+'/maxresdefault.jpg" />');
+  });
+
+  $('#videos a').click(function() {
+     var data = $(this).attr('data');
+     $('#loader').append('<iframe src="https://www.youtube.com/embed/'+data+'" frameborder="0" allowfullscreen></iframe>');
+     $('#overlay').fadeIn(250);
+  });
+
+  $('#close').click(function() {
+     $('#overlay').fadeOut(250,function() {
+        $('#loader').html('');
+     });
+  });
+});

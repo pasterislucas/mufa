@@ -29,6 +29,9 @@
         }
     </style>
 
+
+
+
 </head>
 
 <body>
@@ -55,13 +58,13 @@
                         <a href="#" class="nav-link">Conocenos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Conotactanos</a>
+                        <a href="#" class="nav-link">Contactanos</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <hr class="my-3">
+    
     <!-- final del nav -->
     <div id="slides" class="carousel slide" data-ride="carousel">
         <ul class="carousel-indicators">
@@ -76,7 +79,7 @@
                 <div class="carousel-caption">
                     <h1 class="display-2">Lebron for the Win</h1>
                     <h3>alto partido en la cancha de lo lakers</h3>
-                    <button type="button" class="btn btn-outline btn-lg" style="margin-bottom: 1em;">Leer aqui!</button>
+                    <button type="button" class="btn btn-primary btn-lg" style="margin-bottom: 1em;">Leer aqui!</button>
 
                 </div>
             </div>
@@ -97,20 +100,21 @@
         <div class="row jumbotron">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="text-align: center;">
                 <p class="lead">Estos partidos estan disputandose en vivo, miralos para mufar a el equipo rival!</p>
+                <hr class="light">
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                <img id="iconoLogo" src="img/afa.png" alt="">
-                <img id="iconoLogo" src="img/Escudo_CBF.png" alt="">
+                <img id="iconoPartidoVivo" src="img/afa.png" alt="">
+                <img id="iconoPartidoVivo" src="img/Escudo_CBF.png" alt="">
                 <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">Ver En Vivo</button></a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                <img id="iconoLogo" src="img/afa.png" alt="">
-                <img id="iconoLogo" src="img/Escudo_CBF.png" alt="">
+                <img id="iconoPartidoVivo" src="img/afa.png" alt="">
+                <img id="iconoPartidoVivo" src="img/Escudo_CBF.png" alt="">
                 <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">Ver En Vivo</button></a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                <img id="iconoLogo" src="img/afa.png" alt="">
-                <img id="iconoLogo" src="img/Escudo_CBF.png" alt="">
+                <img id="iconoPartidoVivo" src="img/afa.png" alt="">
+                <img id="iconoPartidoVivo" src="img/Escudo_CBF.png" alt="">
                 <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">Ver En Vivo</button></a>
             </div>
         </div>
@@ -264,23 +268,35 @@
     <hr class="my-3">
 
     <!-- fin de las noticias -->
-    <!-- fondo fix para pasar a videos -->
-    <figure>
-        <div class="fixed-wrap">
-            <div id="fixed">
-
-            </div>
-        </div>
-    </figure>
-    <!-- fin de fondo fix -->
     <!-- comienzo de videos -->
+    <div class="row padding">
+            <div id="videos">
+                    <a data="W3nWaY"></a>
+                    <a data="ktAT6JCWCr0"></a>
+                    <a data="d0K436vUM4w"></a>
+                    <a data="PhbWIFDqQfk"></a>
+                 </div>
+                 
+                 <div id="overlay">
+                    <div class="modal">
+                       <div id="close">X</div>
+                       <div id="loader"></div>
+                    </div>
+                 </div>
+    </div>
     <!-- fin de videos -->
+    <hr class="my-3">
+
     <!-- comienzo footer -->
+    
+    <hr class="my-3">
     <footer>
         <div class="container-fluid padding">
             <div class="row text-center">
                 <div class="col-md-4">
-                    <img src="img/mufaVertical.png" alt="" style="width: 60px;">
+                        <hr class="light">
+                    <img src="img/mufaVertical.png" alt="" style="width: 60px; background-color: white;
+                    border-radius: 6px;">
                     <hr class="light">
                     <p>555-5555-5555</p>
                     <p>mufa@mufa.com</p>
@@ -301,24 +317,28 @@
                             <img src="img/iconoTwt.png" alt="" style="width: 30px;">
                         </div>
                         <div class="col-md-3">
-                            <img src="img/iconoGoogle.png" alt="" style="width: 30px;">
+                            <img src="img/iconoYou.png" alt="" style="width: 30px;">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <img src="img/mufaVertical.png" alt="" style="width: 60px;">
+                        <hr class="light">
+                    <img src="img/mufaVertical.png" alt="" style="width: 60px; background-color: white;
+                    border-radius: 6px;">
                     <hr class="light">
 
                     <p>100 calle mufa</p>
                     <p>mufacity, mufanation</p>
                 </div>
                 <div class="col-md-12">
-                    <hr class="light">
+                    <hr class="light-100">
                     <h5>&copy;mufa.com</h5>
                 </div>
             </div>
         </div>
     </footer>
+
+   
 </body>
 
 </html>
