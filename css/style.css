@@ -29,7 +29,7 @@ hr,br{
   /* background-color: #3f3f3f !important; */
   /* border-bottom: solid #b4b4b4;
   width: 100%  */
-  background: rgba(0,0,0,0.7) !important;
+  background-color: #e9ecef;
   
 }
  
@@ -156,11 +156,11 @@ hr.light-100{
 }
 
 @media (max-width: 1215px){
-  .carousel-caption{
+  /* .carousel-caption{
    
     top: 45%;
    
-  }
+  } */
   .carousel-caption{
     font-size: 350%;
   }
@@ -176,14 +176,14 @@ hr.light-100{
 }
 
 @media (max-width: 879px){
-  .carousel-caption{
+  /* .carousel-caption{
     
     top: 42%;
    
   }
   .carousel-caption{
     font-size: 350%;
-  }
+  } */
   .carousel-caption h3{
    display: none;
   }
@@ -192,17 +192,41 @@ hr.light-100{
     padding: 8px 14px;
   }
 }
-@media (max-width: 520px){
+.carousel-caption h1{
+  font-size: 3rem !important;
+}
+@media only screen and (min-width: 523px)and (max-width:1200){
+  .carousel-caption h1{
+    font-size: 2rem !important;
+  }
+  .carousel-caption button{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 300px)and (max-width:522px){
+  .carousel-caption h1{
+    font-size: 1rem !important;
+  }
+  .carousel-caption button{
+    display: none;
+  }
 #menuLogin{
   display: none;
 }
-
+/* .carousel-caption h1{
+  font-size: 60px !important;
+} */
+.carousel-caption button{
+  display: none;
+}
 
 }
 
 .navbar{
   padding: .8rem;
-  background-color: #3f3f3f !important;
+  
+  background-color: #e9ecef !important;
 }
  
   
@@ -225,12 +249,11 @@ hr.light-100{
   position: absolute;
   top: 58%;
   transform: translateY(-50%);
-}
-.carousel-caption{
   font-size: 500%;
   text-transform: uppercase;
   text-shadow: 1px 1px 15px #000;
 }
+
 .carousel-caption h3{
   font-weight: 500;
   text-shadow: 1px 1px 1px 10px #000 !important;
@@ -287,11 +310,11 @@ hr.light-100{
 
 
 @media (max-width: 1215px){
-  .carousel-caption{
+  /* .carousel-caption{
    
     top: 45%;
    
-  }
+  } */
   .carousel-caption{
     font-size: 350%;
   }
@@ -307,11 +330,11 @@ hr.light-100{
 }
 
 @media (max-width: 879px){
-  .carousel-caption{
+  /* .carousel-caption{
     
     top: 42%;
    
-  }
+  } */
   .carousel-caption{
     font-size: 350%;
   }
@@ -323,13 +346,19 @@ hr.light-100{
     padding: 8px 14px;
   }
 }
-
+@media (max-width: 660px){
+  .carousel-caption button{
+    display: none;
+  } 
+  
+    
+}
 @media (max-width: 360px){
-  .carousel-caption{
+  /* .carousel-caption{
     font-size: 60px;
     top: 42%;
    
-  }
+  } */
   .carousel-caption{
     font-size: 350%;
   }
@@ -352,11 +381,11 @@ hr.light-100{
 }
 
 @media (max-width: 360px){
-  .carousel-caption{
+  /* .carousel-caption{
     font-size: 60px;
     top: 42%;
    
-  }
+  } */
   .carousel-caption{
     font-size: 350%;
   }
