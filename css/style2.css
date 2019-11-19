@@ -1044,5 +1044,13 @@ transition: 0.25s;
    font-size: 30px;
 
   }
-
+  #cardUnoXUnoPuntaje{
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgb(252, 128, 13);
+    padding: inherit;
+    color: white;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
   
